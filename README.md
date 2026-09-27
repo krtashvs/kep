@@ -14,7 +14,13 @@ npm run lint
 npm run typecheck
 ```
 
-Set `NEXT_PUBLIC_SITE_URL` saat deploy supaya URL gambar Open Graph benar (di Vercel otomatis memakai `VERCEL_URL`).
+## Deploy (Vercel)
+
+1. Login ke [vercel.com](https://vercel.com) pakai akun GitHub.
+2. **Add New → Project**, lalu import repo `krtashvs/kep`. Framework otomatis terdeteksi Next.js; biarkan setting default.
+3. Klik **Deploy**. Setiap push ke branch default akan otomatis deploy ulang.
+
+Preview link (Open Graph) otomatis memakai domain production Vercel. Kalau pakai domain sendiri, set `NEXT_PUBLIC_SITE_URL` (misal `https://kep.example.com`) di Settings → Environment Variables.
 
 ## Alur scene
 
